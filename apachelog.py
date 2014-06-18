@@ -154,7 +154,7 @@ class parser:
                 if element == '%r' or findreferreragent.search(element):
                     subpattern = r'\"([^"\\]*(?:\\.[^"\\]*)*)\"'
                 else:
-                    subpattern = r'\"([^\"]*)\"'
+                    subpattern = r'\"(([^\"]|\"\")*)\"'
                 
             elif findpercent.search(element):
                 subpattern = r'(\[[^\]]+\])'
